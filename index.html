@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Playing Spotify songs </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+		<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+		<script defer type="text/javascript" src="js/js-search.js"></script>
+	</head>
+	<body>
+
+		<div class="widget">
+
+			<p>
+				<input type="text" id="title_search"> 
+				<button id="js-search">Search a Song</button>
+			</p>
+			<div class="alert alert-danger" style="background: none; border: none;" role="alert" id="sr-only"></div>
+			<div class="header">
+				   
+				<div class="btn-play disabled" id="btn-play"></div>
+
+				<div class="metadata">
+				    <p class="title" id="my_title">Hunger of The Pine</p>
+				    <a href="#myModal" class="btn btn-primary" style="background: #ffffcc; color: grey;"data-toggle="modal"><p id="author">  alt-J </p></a>
+
+				    <div class="seekbar">
+				        <progress id="seekbar_id" value="0" max="30"></progress>
+				    </div>
+
+				</div>
+			</div>
+
+			<div class="cover">
+			    <img id="artist_image" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+			</div>
+			 	<audio src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31" class="js-player" id = "js-player" ></audio>		   
+			</div>
+
+			<div id="myModal" class="modal fade">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                    <h4 class="modal-title" id="modal-title">Artista</h4>
+	                </div>
+	                <div class="modal-body" id="modal-body">
+	                    <p>Álbum</p>
+	                </div>
+	                <div class="additional-information" id="additional-information">
+	                    <small><p>Canción</p></small>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+			
+	</body>
+</html>
